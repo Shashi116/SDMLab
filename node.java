@@ -12,6 +12,10 @@ class node{
         }
         System.out.println();
     }
+    void insertionatend(int i){
+        node temp=new node(i);
+        temp.next=this.next;
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         node head=new node(sc.nextInt(1));
@@ -24,6 +28,6 @@ class node{
         temp.next.next.next=new node(sc.nextInt(3));
         temp.next.next.next.next=new node(sc.nextInt(4));
         temp.next.next.next.next.next=new node(sc.nextInt(5));
-
+        insertionatend(6);
         display(temp);
 }
