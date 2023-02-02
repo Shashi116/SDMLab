@@ -16,6 +16,11 @@ class node{
         node temp=new node(i);
         temp.next=this.next;
     }
+    void display(node temp){
+        while(temp!=null){
+            temp.display();
+        }   
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         node head=new node(sc.nextInt(1));
